@@ -52,8 +52,8 @@ nav {
   border-radius: 20px;
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   position: relative;
+  overflow: hidden;
 }
 .task-box::before
 {
@@ -73,21 +73,26 @@ counter-increment: boxes;
     border-radius: 50%;
     border: 4px white solid;
     box-shadow: 0 0 20px #ccc;
+    overflow: auto;
 }
 .task-box:hover .box-coloring-opacity {
   opacity: 0;
 }
 .box-content {
   width: 96%;
-  padding: 0px 30px;
+  
+  padding: 0px 20px;
+  
 }
 .box-coloring {
   width: 4%;
+  min-width: 20px;
   background: linear-gradient(45deg, #40e0d0, #ff8c00, #ff0080);
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
   transition: all 0.3s ease-in-out;
   position: relative;
+  
 }
 .box-coloring-opacity {
   position: absolute;
