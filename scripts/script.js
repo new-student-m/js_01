@@ -21,14 +21,17 @@ function fun_2() {
 
 // question no 3
 function fun_3() {
-  x_1 = window.document.getElementById("input-3").value;
-  x_2 = window.document.getElementById("input-3-1").value;
+  var x_1;
+  var x_2;
+  x_1 = Number( window.document.getElementById("input-3").value);
+  x_2 = Number( window.document.getElementById("input-3-1").value);
 
   if (x_1 >= x_2) {
     window.document.getElementById("show-3").innerHTML = x_1;
   } else {
     window.document.getElementById("show-3").innerHTML = x_2;
   }
+  window.console.log(typeof(x_1));
 }
 // question no 4
 function fun_4() {
@@ -51,21 +54,21 @@ function fun_5() {
 }
 // question no 6
 function fun_6() {
-    x_1 = window.document.getElementById("input-6").value;
-  
-    if (x_1%2 == 0) {
-      window.document.getElementById("show-6").innerHTML = "even";
-    } else {
-      window.document.getElementById("show-6").innerHTML = "odd";
-    }
+  x_1 = window.document.getElementById("input-6").value;
+
+  if (x_1 % 2 == 0) {
+    window.document.getElementById("show-6").innerHTML = "even";
+  } else {
+    window.document.getElementById("show-6").innerHTML = "odd";
   }
-  // question no 8
+}
+// question no 8
 function fun_8() {
-    x_1 = window.document.getElementById("input-8").value;
-  
-    if (x_1 == "a" || x_1 == "e" || x_1 == "i"|| x_1 == "o" || x_1 == "u") {
-      window.document.getElementById("show-8").innerHTML = "vowel";
-    } else {
-      window.document.getElementById("show-8").innerHTML = "consonant";
-    }
+  x_1 = window.document.getElementById("input-8").value;
+
+  if (x_1 == "a" || x_1 == "e" || x_1 == "i" || x_1 == "o" || x_1 == "u") {
+    window.document.getElementById("show-8").innerHTML = "vowel";
+  } else {
+    window.document.getElementById("show-8").innerHTML = "consonant";
   }
+}
